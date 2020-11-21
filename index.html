@@ -41,7 +41,124 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.0.2"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">onepluskiller</div><div class="header-banner-info__subtitle">一个蒟蒻的沙雕</div></div><div class="header-banner-arrow"><div class="header-banner-arrow__icon"><i class="fas fa-angle-down"></i></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2020/11/06/%E6%90%AD%E5%BB%BA%E5%9F%BA%E4%BA%8Egithub%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2-hexo-github/">搭建基于github的个人博客(hexo+github)</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2020-11-06</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2020-11-11</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">559</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">3分</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h2 id="1-简介"   >
+          <a href="#1-简介" class="heading-link"><i class="fas fa-link"></i></a>1.简介</h2>
+      <p><strong>GitHub</strong> 是一个面向开源及私有软件项目的<strong>托管平台</strong></p>
+<p><strong>Hexo</strong>是一个快速、简洁且高效的<strong>博客框架</strong></p>
+<p>将这两者结合，我们就能得到一个<strong>免费博客</strong></p>
 
+        <h2 id="2-准备"   >
+          <a href="#2-准备" class="heading-link"><i class="fas fa-link"></i></a>2.准备</h2>
+      <p>分别登陆<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/"><strong>Node.js</strong></a>平台（建议下载LTS版）</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/2S8bIqGEtPChKkQ.png" >
+      </p>
+<p>和<a target="_blank" rel="noopener" href="https://git-scm.com/"><strong>Git</strong></a>官网下载对应软件</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/IX1SfEFHGAvxT3Q.png" >
+      </p>
+<p>在<strong>Git Bash</strong>中运行如下命令以检查，如图所示即<strong>安装成功</strong></p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br><span class="line">npm -v</span><br></pre></td></tr></table></div></figure>
+
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/hGyHCBDtUgrQwku.png" >
+      </p>
+
+        <h2 id="3-搭建"   >
+          <a href="#3-搭建" class="heading-link"><i class="fas fa-link"></i></a>3.搭建</h2>
+      
+        <h3 id="3-1搭建本地博客"   >
+          <a href="#3-1搭建本地博客" class="heading-link"><i class="fas fa-link"></i></a>3.1搭建本地博客</h3>
+      <p>在桌面新建一个文件夹，作为博客的<strong>本地目录</strong>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/7W9R1EYDrgISXOM.png" >
+      </p>
+<p>右键文件夹，选择 “<strong>Git Bash Here</strong>“</p>
+<p>在弹出界面中输入<strong>如下指令</strong></p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init</span><br></pre></td></tr></table></div></figure>
+
+<p>不出意外文件夹中应生成<strong>如下目录</strong></p>
+<figure class="highlight dockerfile"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml <span class="comment"># 配置文件 </span></span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds <span class="comment"># 模版文件夹</span></span><br><span class="line">├── source  <span class="comment"># 资源文件夹</span></span><br><span class="line">└── themes  <span class="comment"># 主题文件夹</span></span><br></pre></td></tr></table></div></figure>
+
+<p>此时说明<strong>安装成功</strong></p>
+<p>运行命令</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></div></figure>
+
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/rl9AQphT8SKCxPH.png" >
+      </p>
+<p>在<strong>浏览器</strong>内输入</p>
+<figure class="highlight cmd"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">localhost:4000</span></span><br></pre></td></tr></table></div></figure>
+
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/IGQaL1R2MDt7AN9.png" >
+      </p>
+<p>至此，本地博客已<strong>搭建成功</strong></p>
+
+        <h3 id="3-2Github设置"   >
+          <a href="#3-2Github设置" class="heading-link"><i class="fas fa-link"></i></a>3.2Github设置</h3>
+      <p>登陆<a target="_blank" rel="noopener" href="https://github.com/"><strong>github</strong></a>官网，注册账号</p>
+<p>新建一个仓库，<strong>如图</strong>设置</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/OuNRhnEF1BM4GtQ.png" >
+      </p>
+
+        <h3 id="3-3配置SSH"   >
+          <a href="#3-3配置SSH" class="heading-link"><i class="fas fa-link"></i></a>3.3配置SSH</h3>
+      <p>在<strong>命令行</strong>中输入如下内容</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;github用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;github注册时的邮箱地址&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;邮箱&quot;</span></span><br></pre></td></tr></table></div></figure>
+
+<p>然后连按三次<strong>Enter</strong>键</p>
+<p>查看<strong>C:\Users\你的用户名\.ssh\id_rsa.pub</strong>，即为<strong>SSH密钥</strong></p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/fcrNCxyPvE6WtZV.png" >
+      </p>
+<p>登陆<strong>Github</strong>，进入<strong>设置</strong>页面</p>
+<p>按照<strong>图示</strong>进入<strong>SSH</strong>配置界面</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/EZSGXW1mn6pJrL4.png" >
+      </p>
+<p><strong>Title</strong>随便填，<strong>Key</strong>就是文件中的那一串</p>
+<p><strong>SSH</strong>配置完成，开始部署</p>
+
+        <h3 id="3-4部署到Github"   >
+          <a href="#3-4部署到Github" class="heading-link"><i class="fas fa-link"></i></a>3.4部署到Github</h3>
+      <p>打开<strong>如下</strong>文件</p>
+<figure class="highlight cmd"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">C:\<span class="title">Users</span>\你的用户名\<span class="title">Desktop</span>\<span class="title">Myblog</span>\<span class="title">_config.yml</span></span></span><br></pre></td></tr></table></div></figure>
+
+<p>拖动到<strong>末尾</strong>部分，按照<strong>图片</strong>填写</p>
+<p>
+        <img   class="lazyload lazyload-gif"
+          src="/images/loading.svg" data-src="https://i.loli.net/2020/08/21/MBXJUrAva4HTInw.png" >
+      </p>
+<p><strong>代码</strong>：</p>
+<figure class="highlight yaml"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/onepluskiller-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">https://github.com/你的用户名/你的用户名.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></div></figure>
+
+<p>然后安装插件</p>
+<figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></div></figure>
+
+<p>最后执行以下命令便<strong>大功告成</strong>了！</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></div></figure>
+
+
+        <h2 id="4-结语"   >
+          <a href="#4-结语" class="heading-link"><i class="fas fa-link"></i></a>4.结语</h2>
+      <p>码字不易，如果有所收获的话可以关注下我的<a target="_blank" rel="noopener" href=null><strong>B站</strong></a>和<a target="_blank" rel="noopener" href=null><strong>知乎</strong></a>账号哟(〃’▽’〃)</p>
+<p>最后安利一波我的<a href="https://github.com/onepluskiller/onepluskiller.github.io/"><strong>博客</strong></a>(￣▽￣)~*</p>
+
+        <h2 id="5-参考资料"   >
+          <a href="#5-参考资料" class="heading-link"><i class="fas fa-link"></i></a>5.参考资料</h2>
+      <p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000017986794" >超详细Hexo+Github Page搭建技术博客教程【持续更新】</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
+<p><span class="exturl"><a class="exturl__link"   target="_blank" rel="noopener" href="https://blog.csdn.net/qq_37210523/article/details/80909983" >使用hexo+github搭建个人博客(进阶篇)</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span></p>
 </div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/avatar.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Atlantis Evans</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/onepluskiller" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://weibo.com/u/5845502445" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href=null target="_blank" rel="noopener" data-popover="347773623" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">QQ</span></a><a class="sidebar-ov-social-item" href=null target="_blank" rel="noopener" data-popover="social.bilibili" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">哔</span></a><a class="sidebar-ov-social-item" href=null target="_blank" rel="noopener" data-popover="social.luogu" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">洛</span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">标签</div></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2020</span><span class="footer__devider"></span><span>Atlantis Evans. All Rights Reserved.</span></div><div class="busuanzi"><span class="busuanzi-siteuv"><span class="busuanzi-siteuv__icon"><i class="fas fa-user"></i></span><span class="busuanzi-siteuv__info">访问人数</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_uv"></span></span><span class="busuanzi-sitepv"><span class="busuanzi-siteuv__icon"><i class="fas fa-eye"></i></span><span class="busuanzi-siteuv__info">浏览总量</span><span class="busuanzi-siteuv__value" id="busuanzi_value_site_pv"></span></span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1.0.1/dist/canvas-nest.min.js" color="0,0,0" opacity="0.6" count="99" zIndex="-1"></script><script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><script>function initSearch() {
   var isXML = true;
   var search_path = 'search.json';
