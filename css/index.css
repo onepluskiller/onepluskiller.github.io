@@ -1376,8 +1376,8 @@ body::before {
   }
 }
 .sidebar-ov-author__text {
-  margin: 0.5rem 0 0;
-  font-weight: 700;
+  margin: 1rem 0 0;
+  font-weight: 1000;
 }
 .sidebar-ov-social {
   padding: 0.5rem 0;
