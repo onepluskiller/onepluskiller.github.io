@@ -161,3 +161,11 @@ h1::after {
     transform: translateY(-30px);
   }
 }
+
+
+.a{
+  text-decoration:none;
+} 
+.a:hover{
+  text-decoration:none;
+}
