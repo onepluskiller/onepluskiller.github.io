@@ -1,4 +1,6 @@
 html {
+  width: 100%;
+  height: 100%;
   font-size: 8px;
 }
 
@@ -9,11 +11,12 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
   overflow: hidden;
   /*align-items: flex-end;*/
   background-image: url("./pic/Mojave Night.jpg");
-  background-repeat:no-repeat ;
-  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -162,3 +165,7 @@ h1::after {
   }
 }
 
+.particle-spin {
+  position: absolute;
+  z-index: -2;
+}
