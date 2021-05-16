@@ -1,0 +1,171 @@
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 8px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /*align-items: flex-end;*/
+  background-image: url("./pic/Mojave Night.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.menubar {
+  width: 100%;
+  height: 2.5rem;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 2px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: inline;
+  justify-content: center;
+  list-style: none;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  cursor: default;
+}
+
+.menubar_left {
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  text-indent:20px;
+  cursor: default;
+}
+
+.menubar_right {
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  text-indent:15px;
+  cursor: default;
+}
+
+.desktop_spotlight {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: default;
+}
+
+
+h1 {
+  color: #333;
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  font-size: 10rem;
+  letter-spacing: -0.3rem;
+  position: relative;
+}
+
+h1::after {
+  content: attr(data-spotlight);
+  color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+  clip-path: ellipse(100px 100px at 0% 50%);
+  animation: spotlight 5s infinite;
+  background-image: url(https://images.unsplash.com/photo-1579547621869-0ddb5f237392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-size: 150%;
+  background-position: center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes spotlight {
+  0% {
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
+
+  50% {
+    -webkit-clip-path: ellipse(100px 100px at 100% 50%);
+    clip-path: ellipse(100px 100px at 100% 50%);
+  }
+
+  100% {
+    -webkit-clip-path: ellipse(100px 100px at 0% 50%);
+    clip-path: ellipse(100px 100px at 0% 50%);
+  }
+}
+
+.glass {
+  width: 100%;
+  height: 5rem;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  border-radius: 5px 5px 3px 3px;
+}
+
+.dock {
+  --scale: 1;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dock li {
+  font-size: calc(4rem * var(--scale));
+  padding: 0 .5rem;
+  cursor: default;
+
+  position: relative;
+  top: calc((4rem * var(--scale) - 4rem) / 2 * -1);
+
+  transition: 20ms all ease-out;
+}
+
+.dock li.loading {
+  animation: 1s loading ease-in infinite;
+}
+
+@keyframes loading {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.particle-spin {
+  position: absolute;
+  z-index: -2;
+}
