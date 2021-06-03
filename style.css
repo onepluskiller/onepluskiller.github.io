@@ -87,7 +87,6 @@ h2 {
   transform: rotate(-45deg);
   top: 10px;
 }
-
 nav {
   position: absolute;
   height: 100%;
@@ -138,6 +137,11 @@ nav[data-state=open] ul li:nth-child(3) {
 }
 nav[data-state=open] ul li:nth-child(4) {
   transition-delay: 0.64s;
+  transform: translateX(0px);
+  opacity: 1;
+}
+nav[data-state=open] ul li:nth-child(5) {
+  transition-delay: 0.80s;
   transform: translateX(0px);
   opacity: 1;
 }
