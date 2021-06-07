@@ -8,6 +8,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -193,4 +194,7 @@ nav[data-state=open] ul li:nth-child(5) {
     margin-top: 70px;
     margin-bottom: 70px;
   }
+}
+.homecontent {
+  margin-top: 20%;
 }
