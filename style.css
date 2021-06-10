@@ -199,8 +199,9 @@ nav[data-state=open] ul li:nth-child(5) {
 }
 .homecontent {
   margin-top: 20%;
-  }
   
+}
+
 h1{
 	color: black;
 	transition: all 1s;
