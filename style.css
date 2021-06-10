@@ -200,3 +200,49 @@ nav[data-state=open] ul li:nth-child(5) {
 .homecontent {
   margin-top: 20%;
   }
+  
+h1{
+	color: black;
+	transition: all 1s;
+	/* 延时1s呈现 */
+	text-shadow: gray 10px 10px 10px;
+	/* 字体阴影：模糊颜色灰色，偏移量10px 10px，模糊程度10px */
+	}
+
+h1:hover{
+	color: rgba(0,0,0,0);
+	text-shadow: black 0 0 75px;
+	/* 字体阴影：模糊颜色黑色，偏移量0 0，模糊程度75px */
+	
+}
+
+h2{
+	color: black;
+	transition: all 1s;
+	text-shadow: gray 5px 5px 5px;
+	}
+
+h2:hover{
+	color: rgba(0,0,0,0);
+	text-shadow: black 0 0 25px;
+}
+
+h4{
+	color: black;
+	transition: all 1s;
+	}
+
+h4:hover{
+	color: rgba(0,0,0,0);
+	text-shadow: black 0 0 20px;
+}
+
+p{
+	color: black;
+	transition: all 1s;
+	}
+
+p:hover{
+	color: rgba(0,0,0,0);
+	text-shadow: black 0 0 15px;
+}
